@@ -1,0 +1,99 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100%;
+    padding: 1%;
+    text-align: left;
+}
+
+.inline-block nav {
+    width: 70%;
+    padding: 1%;
+    text-align: right;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inline-block ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+    justify-content: start;
+    grid-area: heroImg;
+    grid-row: 1 / 3;
+}
+
+.content {
+    width: 100%;
+    height: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 15% auto 15% auto;
+    grid-template-areas: 
+        'heroImg header'
+        'heroImg bio'
+        'heroImg button'
+        'footer footer'
+}
+
+h1 {
+    color: white;
+    margin: auto;
+    justify-content: start;
+    align-content: baseline;
+    grid-area: header;
+}
+
+#bio {
+    color: white;
+    grid-area: bio;
+    justify-content: start;
+    align-content: start;
+    margin: 0 auto;
+}
+
+button {
+    grid-area: button;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: fit-content;
+    height: fit-content;
+    margin: 20px 0 ;
+}
+    
+footer {
+    background-color: darkorchid;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    grid-area: footer;
+    
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+    vertical-align: top;
+    justify-content: space-between;
+    margin-right: auto;
+    list-style: none;
+    color: whitesmoke;
+    text-align: center;
+}
+
+body {
+    background-color: blueviolet;
+}
